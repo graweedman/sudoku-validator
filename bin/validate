@@ -12,7 +12,6 @@ if (!sudoku) {
 } else {
   fs.readFile(sudoku, (error, data) => {
     if (error) throw error
-
-    console.log(Validator.validate(sudoku.toString()))
+    console.log(Validator.validate(data.toString()))
   })
 }
